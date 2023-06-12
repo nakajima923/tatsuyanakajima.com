@@ -1,0 +1,25 @@
+
+#maxwidth{
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+
+#container{
+    padding: 45px 50px 10px;  
+    max-height: calc( 100vh - 60px);
+}
+  .googleform{
+    display: flex;
+    justify-content: center;
+    max-height: 100vh;    
+  }
+
+  
+  @media screen and (max-width:600px) {      
+
+  #container{
+    padding: 30px 50px 10px;  
+  }
+
+  }

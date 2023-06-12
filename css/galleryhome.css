@@ -1,0 +1,167 @@
+#maxwidth{
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.copyright{
+  margin: 2rem 0;
+  font-size: 12px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+
+.Categorise{
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;    
+    color: var(--header-text-color);
+    font-size:25px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.03em;    
+}
+
+.Category_title{
+    margin-top: 10px;
+    margin-left: 0;
+    font-size: 40px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+
+.card{
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*--------------------------------------
+  カード型_01
+--------------------------------------*/
+.l-wrapper_01 {
+    margin: 0px 30px 40px;
+    width: 300px;
+    height: 370px;
+    font-family: 'Tajawal', sans-serif;
+    border-radius: 30%;
+  }
+  
+  .l-wrapper_01:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 7px 20px rgba(0,0,0,.3);
+    transition: all .5s;
+  }
+  
+  .card_01 {
+    background-color: var(--card-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+    color: #212121;
+    text-decoration: none;
+  }
+  
+  .card__header_01 {
+    display: flex;
+    height: 370px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .card__title_01 {
+    color: var(--header-text-color);
+    padding: 1rem 1.5rem 0;
+    font-size: 1.2rem;
+    order: 1;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .card__thumbnail_01 {
+    margin: 0;
+    order: 0;
+    overflow: hidden;    
+  }
+
+
+  .l-wrapper_dummy{
+    margin: 0px 30px 40px;
+    width: 300px;
+    height: 370px;
+    height: 0px !important;
+  }
+  
+  .card__image_01 {
+    width: 300px;
+    height: 300px;
+    transition: 0.5s all;
+    object-fit: cover;
+  }
+
+  .card__image_01:hover{
+    transform: scale(1.05, 1.05);
+  }
+ 
+  .card__thumbnail_01:hover{
+    opacity: 0.;
+  }
+
+
+
+
+
+  @media screen and (max-width:600px) {
+    
+    /* ヘッダーに関するcss */
+        
+    
+        /* 以下本文に関するcss */
+
+        .Categorise{
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+          font-size:15px;
+          
+      }
+    
+        .footer{
+        font-size:12px;
+        color: gray;
+        margin-top: 1.5rem;
+        text-align: center;
+        }
+
+
+        .l-wrapper_01 {
+          margin: 0px 10px 2rem;
+          width: 150px;
+          height: 170px;
+        }
+        
+        
+        .card__header_01 {    
+          height: 180px;
+        }
+        
+        .card__title_01 {
+          padding: 0 1.5rem 0;
+          font-size: 0.5rem;        
+          margin-bottom: 0rem;
+        }           
+            
+        .l-wrapper_dummy{
+          margin: 0px 10px 2rem;
+          width: 150px;
+          height: 150px;
+        }
+        
+        .card__image_01 {
+          width: 150px;
+          height: 150px;
+        }
+   
+    
+      }

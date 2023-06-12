@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= IBM+Plex+Sans:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+
+
+.blog{
+    border-left: 1px solid white;
+}
+
+
+#headerhomewhite{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    background: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    height: 7.5rem;
+}
+
+
+#headerhomewhite li{
+    font-size: 0.9em;
+    margin-left: 20px;
+    margin-top: 15px;
+    letter-spacing: 0.08em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#headerhomewhite ul{
+    display: flex;
+    padding: 10px 0;
+}
+
+#headerhomewhite .navmenu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size:20px;
+    color: gray;
+}
+
+#headerhomewhite .navmenu-togglehome {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size:25px;
+    color: white;
+}
+
+
+
+
+#headerhomewhite li a{
+    color: white;
+    margin: 0 10px 0;
+}
+
+
+#headerhomewhite li a:hover{
+    opacity: 0.3;
+}
+
+.checkwhite{
+    border-bottom: 1px solid;
+    color: white;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+    .site-titlewhite a{
+        color: white;
+        font-size: 15px;
+        font-family: 'Ubuntu', sans-serif;
+        letter-spacing: 0.5em;
+    }
+      
+}
+
+
+
+ @media screen and (max-width:600px) {
+    #headerhomewhite nav{
+        background: rgb(117, 117, 117, 1);
+        width: 100vw;
+        transform: translateX(-4%);
+    }
+
+
+    #headerhomewhite ul {
+        display: block;
+    }
+
+    #headerhomewhite {
+        display: block;
+    }
+
+    #headerhomewhite .navmenu-toggle {
+        display: block;
+    }
+
+    #headerhomewhite .navmenu-togglehome {
+        display: block;
+    }
+
+    #headerhomewhite .headerflex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;        
+    }
+
+
+
+    #headerhomewhite li a{
+        color: white;
+        margin: 0 10px 0;
+    }
+  }

@@ -1,0 +1,120 @@
+
+/* 以下本文に関するcss */
+
+
+.copyright{
+  margin: 2rem 0;
+  font-size: 12px;
+  text-align: center;
+  color: var(--footer-color);
+}
+
+.wrapper{
+  min-height: calc(100vh - 7.5rem);
+  position: relative;/*←相対位置*/
+  padding-bottom: 5px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+  background-color: var(--main-background-color);
+}
+
+footer{
+  width: 100%;
+  background-color: white;
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 5px 0;
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+}
+
+
+#container{
+    padding: 10px 50px 10px;  
+    max-height: 100vh;    
+}
+
+.textcontainer{
+  padding-left: 4%;
+  padding-right: 4%;    
+}
+
+  .sns{
+    margin: 0 0 0;
+  }
+
+  .sns a{
+    margin-right: 1.5rem;
+    color: var(--main-text-color);
+  }
+
+  .sns a :hover{
+    opacity: 0.5;
+  }
+ 
+
+
+  .name{
+    font-size:1.4rem;
+    margin-bottom: 3rem;
+    letter-spacing: 0.3em;
+    color: var(--main-text-color);
+  }
+
+
+  .maintext{
+    margin-bottom: 1rem;
+    margin-right: 5rem;
+    font-size: 13px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    color: var(--main-text-color);
+  }
+
+  .maintextend{
+    margin: 0 0 2rem;
+    font-size: 13px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    color: var(--main-text-color);
+  }
+
+  .aboutmain{
+    display: flex;
+  }
+
+
+
+  @media screen and (max-width:600px) {     
+ 
+    #container{
+    padding: 40px 5px 10px;  
+    max-height: 100vh;
+    }
+
+    .sns a{
+    font-size: 1rem;
+    }
+
+    .name{
+    font-size:1.2rem;    
+    }
+
+
+    .maintext{
+    margin-right: 0rem;
+    font-size: 12px;
+    }
+
+    .maintextend{
+    font-size: 12px;
+    margin-bottom: 50px;
+    }
+
+
+    .aboutmain{
+    display: flex;
+    flex-wrap:wrap; 
+    }
+  }
