@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2? family= IBM+Plex+Sans:wght@100 & display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400&family=Montserrat:wght@100;200;300;400&family=Raleway:wght@100;200;300;400&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
+
 
 
 .checkbox-wrapper {
@@ -204,6 +200,7 @@ a {
 
 
 #mainvisual img {
+    background-image: url(./img/homeimages/1.jpg);
     margin: 0;
     padding: 0;
     width: 100%;
