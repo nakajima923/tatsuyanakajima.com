@@ -115,8 +115,7 @@
 }
 
 .modal-content img {    
-    width: auto;
-    height: 85vh;
+    width: auto;    
     max-width: 100%;
     max-height: 90vh;
     object-fit: contain;
