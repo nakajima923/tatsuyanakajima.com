@@ -130,7 +130,7 @@ html{
     justify-content: space-between;
     padding: 0 4%;
     /* background: rgba(0, 0, 0, 0); */
-    background-color:white;
+    background-color:var(--main-background-color);
     box-sizing: border-box;
     height: 7.5rem;
 }
