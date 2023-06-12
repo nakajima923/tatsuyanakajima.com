@@ -63,16 +63,16 @@
 
             <section class = "picture">
                 <ul>
-                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/1.webp" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div>
-                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/2.webp" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div>
-                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/3.webp" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div>
-                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/4.webp" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div>
-                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/5.webp" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div>
-                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/6.webp" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div>
-                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/7.webp" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div>
-                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/8.webp" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div>
-                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/9.webp" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div>
-                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/10.webp" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div>
+                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/1.webp" alt="室戸岬灯台" loading="lazy" onclick="openModal(this)"></li></div>
+                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/2.webp" alt="室戸岬灯台" loading="lazy" onclick="openModal(this)"></li></div>
+                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/3.webp" alt="日御碕灯台" loading="lazy" onclick="openModal(this)"></li></div>
+                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/4.webp" alt="沖ノ白石灯台" loading="lazy" onclick="openModal(this)"></li></div>
+                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/5.webp" alt="" loading="lazy" onclick="openModal(this)"></li></div>
+                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/6.webp" alt="男木島灯台" loading="lazy" onclick="openModal(this)"></li></div>
+                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/7.webp" alt="男木島灯台" loading="lazy" onclick="openModal(this)"></li></div>
+                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/8.webp" alt="男木島灯台" loading="lazy" onclick="openModal(this)"></li></div>
+                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/9.webp" alt="男木島灯台" loading="lazy" onclick="openModal(this)"></li></div>
+                    <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/10.webp" alt="" loading="lazy" onclick="openModal(this)"></li></div>
                     <!-- <div class = "padding"><li><img decoding="async" class="gallery" data-group="gallery"src="./img/lighthouse/MVI_2077.gif" alt="テキストテキストテキスト" loading="lazy" onclick="openModal(this)"></li></div> -->
                     <div class = "padding"><img class = "dummy" decoding="async" src="./img/dummyimage/fff.png" loading="lazy"></div>
                     <div class = "padding"><img class = "dummy" decoding="async" src="./img/dummyimage/fff.png" loading="lazy"></div>
@@ -82,7 +82,12 @@
 
             <div id="myModal" class="modal fadeUp" onclick="closeModal(event)">
                 <div class="modal-content">
-                  <img id="modalImage" alt="モーダル画像">
+                    <div>
+                        <img id="modalImage" alt="モーダル画像">
+                        <p id="modal-description">
+                            Hogefuga
+                        </p>
+                    </div>
                   <button class="prev-button" onclick="switchImage(-1)"><i class="bi bi-arrow-left-circle"></i></button>
                   <button class="next-button" onclick="switchImage(1)"><i class="bi bi-arrow-right-circle"></i></button>
                 </div>
@@ -102,13 +107,17 @@
     
         <script>
             // 画像がクリックされたときにモーダルウィンドウを開く関数
+            let modalImg = document.getElementById("modalImage");
+            let modalDescr = document.getElementById('modal-description');
+    
             function openModal(img) {
                 var modal = document.getElementById("myModal");
-                var modalImg = document.getElementById("modalImage");
     
                 modal.style.display = "flex";
                 modalImg.src = img.src;
-    
+                modalImg.alt = img.alt;
+                modalDescr.innerText = img.alt;
+                
                 currentIndex = Array.from(images).indexOf(img);
             }
     
@@ -133,6 +142,8 @@
                 }
                 var modalImg = document.getElementById("modalImage");
                 modalImg.src = images[currentIndex].src;
+                modalImg.alt = images[currentIndex].alt;
+                modalDescr.innerText = images[currentIndex].alt;
             }
     
             document.addEventListener('keydown', function(event) {
@@ -142,6 +153,26 @@
                   switchImage(1); // 右に切り替え
                 }
               });
+    
+            modalImg.addEventListener('touchstart', (e1) => {
+                e1.preventDefault();
+                const endEvent = (e2) => {
+                    e2.preventDefault();
+                    const st = e1.touches[0];
+                    const et = e2.changedTouches[0];
+                    const diff = et.pageX - st.pageX;
+                    if (Math.abs(diff) > 15)
+                    {
+                        if (diff > 0)
+                            switchImage(-1);
+                        else
+                            switchImage(1);
+                    }
+                    modalImg.removeEventListener('touchend', endEvent);
+                }
+                modalImg.addEventListener('touchend', endEvent);
+            });
+    
         </script>
         <script src="pageup.js"></script>
         <script src="toggle.js"></script>
