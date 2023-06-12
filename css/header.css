@@ -50,8 +50,7 @@ body{
 
 main{
     -webkit-transition: padding .3s ease 0s;
-      transition: padding .3s ease 0s;
-      /* line-height: 2; */
+      transition: padding .3s ease 0s;      
       font-size: 1.2rem;      
       margin: 0;
       padding: 0;
@@ -137,7 +136,7 @@ html{
     margin-left: 20px;
     margin-top: 15px;
     letter-spacing: 0.08em;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 #headerhome ul{
