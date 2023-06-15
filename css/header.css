@@ -15,6 +15,7 @@
         --main-text-color: black; 
         --footer-color: gray;
         --card-color: #FFF;        
+        --filter: brightness(100%);
     }
   }
   
@@ -25,7 +26,8 @@
         --header-text-color: white;    
         --main-text-color: white; 
         --footer-color: white;
-        --card-color: #282c34;        
+        --card-color: #282c34;
+        --filter: brightness(80%);        
   }
  
 
@@ -39,8 +41,17 @@ body{
     color: var(--header-text-color);
 }
 
+#toggleIconhome{
+    font-size: 20px;
+    color: white;
+}
+
 #headerhome .darkmode{
-    margin-top: 12px;    
+    margin-top: 11px;    
+}
+
+#headerhomewhite .darkmode{
+    margin-top: 11px;
 }
 
 #headerhome label{
@@ -205,6 +216,7 @@ a {
     height: 100vh;
     object-fit: cover;
     vertical-align: bottom;
+    filter: var(--filter);    
 }
 
 #circle-container {
