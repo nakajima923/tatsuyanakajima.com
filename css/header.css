@@ -288,6 +288,11 @@ footer {
         color: white;
     }
 
+    #toggleIconhome{
+        margin-left: 10px;
+        color: white;
+    }
+
     .site-title a{
         color: var(--header-text-color);
         font-size: 15px;
