@@ -138,7 +138,14 @@ html{
     background-color:var(--main-background-color);
     box-sizing: border-box;
     height: 7.5rem;
+    transition: height 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+#headerhome.headersmall {
+    height: 6rem;
+  }
+
+
 
 
 #headerhome li{
@@ -282,6 +289,7 @@ footer {
 
 
  @media screen and (max-width:600px) {
+ 
 
     #toggleIcon{
         margin-left: 10px;
