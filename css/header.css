@@ -301,11 +301,8 @@ footer {
         color: white;
     }
 
-    .site-title a{
-        color: var(--header-text-color);
-        font-size: 15px;
-        font-family: 'Ubuntu', sans-serif;
-        letter-spacing: 0.5em;
+    .site-title a{        
+        font-size: 15px; 
     }
 
   
