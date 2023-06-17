@@ -244,6 +244,11 @@
       background-color: var(--main-background-color);      
       color: var(--header-text-color);
     }
+
+    #back-to-top:hover{
+      opacity: 0.5;
+    }
+
     #back-to-top.show {
       display: block;
     }

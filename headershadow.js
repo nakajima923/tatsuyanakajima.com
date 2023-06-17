@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function() {
   var header = document.getElementById("headerhome");
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+  var scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
   var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0;
 
   if (scrollTop >= 50 && windowWidth < 600) {
