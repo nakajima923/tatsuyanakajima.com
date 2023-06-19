@@ -13,8 +13,7 @@
   min-height: calc(100vh - 7.5rem);
   position: relative;/*←相対位置*/
   padding-bottom: 5px;/*←footerの高さ*/
-  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
-  background-color: var(--main-background-color);
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/  
 }
 
 footer{
