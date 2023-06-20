@@ -48,14 +48,9 @@ document.addEventListener('keypress', (e) => {
                 audio.volume = vol;
             }, 100);
             audio.play();
-    });
-});
-
-
-document.addEventListener('keypress', (e) => {
+        });
     evalKeyCommand('rotate', e, () => {
-        const body = document.getElementsByTagName('body')[0];            
-            body.classList.add('rotate-all');
-            
+        const body = document.getElementsByTagName('body')[0];
+            body.classList.add('rotate-all');            
     });
 });
