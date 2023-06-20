@@ -6,10 +6,12 @@ const toggleMobileMenu = () => {
 
 let hiddenCmd = {
     'gaming': 'gaming'.split(''),
+    'rotate': 'rotate'.split(''),
 };
 
 let hiddenCmdProgress = {
     'gaming': Array(hiddenCmd['gaming'].length).fill(false),
+    'rotate': Array(hiddenCmd['rotate'].length).fill(false),
 };
 
 const evalKeyCommand = (t, e, fn) => {
@@ -46,5 +48,14 @@ document.addEventListener('keypress', (e) => {
                 audio.volume = vol;
             }, 100);
             audio.play();
+    });
+});
+
+
+document.addEventListener('keypress', (e) => {
+    evalKeyCommand('rotate', e, () => {
+        const body = document.getElementsByTagName('body')[0];            
+            body.classList.add('rotate-all');
+            
     });
 });
